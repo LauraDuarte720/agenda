@@ -31,7 +31,7 @@ public class App {
         agenda.agregarContactoAgenda(contacto);
         agenda.agregarContactoAgenda(contacto2);
         agenda.agregarGrupo(grupo);
-        agenda.agregarreuniones(reunion);
+        agenda.agregarReuniones(reunion);
         Agenda.mostrarMensaje(agenda.toString());
 
     

@@ -71,7 +71,7 @@ public class Agenda {
         
     }
 
-    public void agregarreuniones(Reunion reunion){
+    public void agregarReuniones(Reunion reunion){
             reuniones.add(reunion);
     }
 
