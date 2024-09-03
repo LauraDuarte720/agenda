@@ -15,7 +15,6 @@ public class App {
         Contacto contacto3=new Contacto("Juan", "Juanitio", "El  paraiso", "467", "jj@gmail.com");
         Contacto contacto4=new Contacto("Mariana", "Mari", "El granada", "888", "mm@gmail.com");
         Contacto contacto5=new Contacto("Jacobo", "Jaco", "La aurora", "777", "jb@gmail.com");
-        Agenda.mostrarMensaje(grupo.toString());
         grupo.agregarContacto(contacto);
         grupo.agregarContacto(contacto2);
         grupo.agregarContacto(contacto3);
