@@ -68,8 +68,8 @@ public class Contacto {
 
     @Override
     public String toString() {
-        return "Contacto " + nombre + ", :" + alias + ", " + direccion + ", " + telefono
-                + ", " + email+ "\n";
+        return "Contacto: " + nombre + ", alias: " + alias + ", cuya dirección es " + direccion + ",  telefono: " + telefono
+                + ", y correo electronico: " + email+ "\n";
     }
 
     public LinkedList<Grupo> getGruposContacto() {

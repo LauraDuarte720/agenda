@@ -32,9 +32,7 @@ public class App {
         agenda.agregarreuniones(reunion);
         agenda.agregarreuniones(reunion2);
         Agenda.mostrarMensaje(agenda.toString());
-        contacto.agregarGrupoContacto(grupo);
-        Agenda.mostrarMensaje(contacto.toString());
-    
+
     
     }
 

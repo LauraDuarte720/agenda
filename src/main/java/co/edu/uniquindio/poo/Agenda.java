@@ -89,8 +89,8 @@ public class Agenda {
 
     @Override
     public String toString() {
-        return "Agenda " + nombre + ", cuyos contactos son" + contactosAgenda + "\n, sus grupos son:\n " + grupos
-                + "\n, reuniones:\n" + reuniones;
+        return "Agenda " + nombre + ", cuyos contactos son:\n" + contactosAgenda + "\nSus grupos son:\n " + grupos
+                + "\nReuniones:\n" + reuniones;
     }
 
     public void removerContacto(String nombre, String telefono ){

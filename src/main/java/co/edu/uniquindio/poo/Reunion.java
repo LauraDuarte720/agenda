@@ -73,7 +73,7 @@ public class Reunion {
 
     @Override
     public String toString() {
-        return "Reunion" + descripcion + ", " + fecha + ", " + hora + ". La reunion esta conformada por: \n"+ contactosReunion;
+        return "Reunion " + descripcion + ", fecha: " + fecha + ", hora: " + hora + ". La reunion esta conformada por: \n"+ contactosReunion;
     }
 
     public void removerContactoAsistente(String nombre, String telefono ){
