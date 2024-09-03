@@ -4,7 +4,6 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.LinkedList;
 
-import co.edu.uniquindio.poo.Grupo.Categoria;
 
 public class Agenda {
     private String nombre;

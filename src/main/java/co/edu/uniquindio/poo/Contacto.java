@@ -1,11 +1,14 @@
 package co.edu.uniquindio.poo;
 
+import java.util.LinkedList;
+
 public class Contacto {
     private String nombre;
     private String alias;
     private String direccion;
     private String telefono;
     private String email;
+    private LinkedList<Grupo>gruposContacto;
 
 
     public Contacto(String nombre,String alias, String direccion, String telefono, String email){
@@ -14,6 +17,7 @@ public class Contacto {
         this.direccion=direccion;
         this.telefono=telefono;
         this.email=email;
+        gruposContacto=new LinkedList<>();
         assert !nombre.isBlank();
         assert !alias.isBlank();
         assert !direccion.isBlank();
@@ -65,7 +69,20 @@ public class Contacto {
     @Override
     public String toString() {
         return "Contacto " + nombre + ", :" + alias + ", " + direccion + ", " + telefono
-                + ", " + email+"\n";
+                + ", " + email+ "\n";
+    }
+
+    public LinkedList<Grupo> getGruposContacto() {
+        return gruposContacto;
+    }
+
+    public void agregarGrupoContacto(Grupo grupo){
+        gruposContacto.add(grupo);
+    
+}
+
+    public void setGruposContacto(LinkedList<Grupo> gruposContacto) {
+        this.gruposContacto = gruposContacto;
     }
 
     

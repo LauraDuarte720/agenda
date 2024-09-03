@@ -4,13 +4,11 @@ import java.util.LinkedList;
 
 public class Grupo {
     
-    public enum Categoria{
-        OFICINA,FIESTA,AMIGOS,FAMILIA
-    }
 
     private String nombre;
     private Categoria categoria;
     private LinkedList<Contacto>contactos;
+    
 
     public Grupo(String nombre,Categoria categoria){
         this.nombre=nombre;
@@ -64,6 +62,16 @@ public class Grupo {
         return nombreTelefonoRepetido;
     }
 
+    public void removerContacto(String nombre, String telefono){
+        for (Contacto contacto:contactos){
+            if (contacto.getNombre().equals(nombre)){
+                if(contacto.getTelefono().equals(telefono)){
+                    contactos.remove(contacto);
+                    break;
+                }
+            }
+        }
+    }
 
     @Override
     public String toString() {
