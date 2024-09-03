@@ -11,15 +11,20 @@ public class App {
         Grupo grupo=new Grupo("cumpelaños", Categoria.FIESTA);
         Grupo grupo2=new Grupo ("Cita",Categoria.FAMILIA);
         Reunion reunion =new Reunion("Trabajo",LocalDate.of(2024, 2, 4) , LocalTime.of(2, 00, 00));
-        Reunion reunion2 =new Reunion("Fiesta",LocalDate.of(2024, 11, 9) , LocalTime.of(4, 30, 00));
         Contacto contacto=new Contacto("Juliana", "Juli", "7 de Agosto", "222","jv@gmail.com" );
         Contacto contacto2=new Contacto("Sara", "Saris", "Calarca", "555","sb@gmail.com" );
+        Contacto contacto3=new Contacto("Juan", "Juanitio", "El  paraiso", "467", "jj@gmail.com");
+        Contacto contacto4=new Contacto("Mariana", "Mari", "El granada", "888", "mm@gmail.com");
+        Contacto contacto5=new Contacto("Jacobo", "Jaco", "La aurora", "777", "jb@gmail.com");
         grupo.agregarContacto(contacto);
         grupo2.agregarContacto(contacto);
         Agenda.mostrarMensaje(grupo.toString());
         Agenda.mostrarMensaje(grupo2.toString());
         reunion.agregarContacto(contacto);
         reunion.agregarContacto(contacto2);
+        reunion.agregarContacto(contacto3);
+        reunion.agregarContacto(contacto4);
+        reunion.agregarContacto(contacto5);
         Agenda.mostrarMensaje(reunion.toString());
         reunion.removerContactoAsistente("Juliana", "222");
         Agenda.mostrarMensaje(reunion.toString());
@@ -30,7 +35,6 @@ public class App {
         agenda.agregarGrupo(grupo2);
         agenda.agregarGrupo(grupo);
         agenda.agregarreuniones(reunion);
-        agenda.agregarreuniones(reunion2);
         Agenda.mostrarMensaje(agenda.toString());
 
     
